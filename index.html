@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Montserrat&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/f0293cd988.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="nav"><h1>JavaSript Handson-2</h1></div>
+      <div class="Q1 Q">
+        <p><b>Find the number of digits</b></p>
+        <pre>
+        const Find_Digits = (N) => 
+    {
+  
+    let  count = 0;
+	    while(N > 0){
+	    N = parseInt(N/10)
+	    count++;
+	    }
+	    return count;
+    };
+    </pre
+        >
+        <hr />
+      </div>
+      <div class="Q1 Q">
+        <p><b>Find the Fives.</b></p>
+        <pre>
+        const Find_Five = (N) =>
+     {
+	 let count = 0;
+	 while(N>0) {
+	   let P = N%10;
+	   N = parseInt(N/10);
+	   if(P===5){
+	     count=count+1;
+	     }
+	  }
+	  return count;
+    };
+    </pre
+        >
+        <hr />
+      </div>
+      <div class="Q1 Q">
+        <p><b>Find Sum</b></p>
+        <pre>
+        const findSum = (n) => 
+    {
+  
+         let count = 0;
+  
+        for(i=0;i<=n;i++){
+      
+      if(i%2===0){
+        count=count+i;
+      }
+    }
+    return count;
+    };
+    </pre
+        >
+        <hr />
+      </div>
+      <div class="Q1 Q">
+        <p><b>Find the sum of the digits of a given number.</b></p>
+        <pre>
+        const Number_Sum = (N) => 
+    {
+        let sum = 0;
+        while (N){
+        sum = sum + (N % 10);
+        N = parseInt(N/10);
+    
+    }
+        return sum;
+	
+    };
+    </pre
+        >
+        <hr />
+      </div>
+      <div class="Q1 Q">
+        <p><b>Print the Odds.</b></p>
+        <pre>
+       const Print_Odd = (N) => 
+    {
+	 for(i=2;i<=N;i++){
+	   if(i===2){
+	     console.log(i);
+	   }
+	   else if(i%2!==0)
+	   console.log(i);
+	 }
+
+    };
+
+    </pre
+        >
+        <hr />
+      </div>
+      <div class="Q1 Q">
+        <p><b>Print the Pattern.</b></p>
+        <pre>
+       const Print_pattern = (N) => 
+    {
+     for( let row=0; row<=N; row++)
+    {
+          var n ="";
+      for( let col=0; col<=row;col++){
+               n += "*";
+      }
+           console.log(n);
+    }
+    
+    };
+    </pre
+        >
+        <hr />
+      </div>
+      <div class="Q1 Q">
+        <p><b>Check whether a Number is a prime or not.</b></p>
+        <pre>
+       const Prime_Check = (N) => 
+    {
+	  if(N===1){
+       return "NO"
+     }else{
+        for(var i=2; i < N ; i++){
+        if( N%i === 0){
+           return "NO";
+              }
+          }
+           return "YES";
+      }
+    };
+    </pre
+        >
+        <hr />
+      </div>
+      <div class="Q1 Q">
+        <p><b>Print Numbers</b></p>
+        <pre>
+      const printNumbers = (n) => 
+      {
+    for ( let i=1 ; i<= n; i++) {
+       console.log(i)
+        }
+    };
+
+    </pre
+        >
+        <hr />
+      </div>
+      <div class="Q1 Q">
+        <p><b>Print the Table</b></p>
+        <pre>
+      const Print_Table = (N) => 
+    {
+    for (i=1; i<=10; i++){
+      console.log(`${N} * ${i} = ${N*i}`);
+      }
+    };
+
+    </pre
+        >
+        <hr />
+      </div>
+    </div>
+  </body>
+</html>
